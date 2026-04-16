@@ -1,0 +1,113 @@
+{
+  "entities": {
+    "Order": {
+      "title": "Order",
+      "description": "A customer order",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "isGuest": { "type": "boolean" },
+        "guestInfo": {
+          "type": "object",
+          "properties": {
+            "email": { "type": "string", "format": "email" },
+            "name": { "type": "string" }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "bookId": { "type": "string" },
+              "title": { "type": "string" },
+              "price": { "type": "number" },
+              "quantity": { "type": "integer" }
+            }
+          }
+        },
+        "subtotal": { "type": "number" },
+        "discountAmount": { "type": "number" },
+        "appliedCoupon": { "type": "string" },
+        "total": { "type": "number" },
+        "status": { "type": "string", "enum": ["pending", "completed", "cancelled"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "address": { "type": "string" },
+        "houseNumber": { "type": "string" },
+        "apartmentName": { "type": "string" },
+        "landmark": { "type": "string" },
+        "paymentMethod": { "type": "string", "enum": ["cod", "upi", "card"] },
+        "coinsEarned": { "type": "integer" },
+        "shippingCost": { "type": "number" },
+        "waybill": { "type": "string" },
+        "trackingStatus": { "type": "string" }
+      },
+      "required": ["items", "total", "status", "createdAt", "isGuest", "address", "paymentMethod"]
+    },
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "User specific data",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "pustakCoins": { "type": "integer" },
+        "wishlist": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["email"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "A user review for a book",
+      "type": "object",
+      "properties": {
+        "bookId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "rating": { "type": "integer" },
+        "comment": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["bookId", "userId", "userName", "rating", "comment", "createdAt"]
+    },
+    "Book": {
+      "title": "Book",
+      "description": "A book in the catalog",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "image": { "type": "string", "format": "uri" },
+        "category": { "type": "string" },
+        "condition": { "type": "string", "enum": ["New", "Used"] },
+        "language": { "type": "string" },
+        "description": { "type": "string" },
+        "stock": { "type": "integer" },
+        "isFeatured": { "type": "boolean" },
+        "isBestSeller": { "type": "boolean" },
+        "isBudgetPick": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "author", "price", "category", "condition", "language", "stock"]
+    }
+  },
+  "firestore": {
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Collection of customer orders"
+    },
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile information"
+    },
+    "/books/{bookId}": {
+      "schema": "Book",
+      "description": "Collection of books in the catalog"
+    }
+  }
+}

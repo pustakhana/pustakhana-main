@@ -1,0 +1,5 @@
+{
+  "name": "Pustakhana Book Store",
+  "description": "A modern book store with advanced search, filtering, guest checkout, and user profile management.",
+  "requestFramePermissions": ["geolocation"]
+}
