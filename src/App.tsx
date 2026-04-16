@@ -1283,7 +1283,7 @@ const LandingPage = () => {
 
               {/* Content - Right Side (Overlay) */}
               <div className="absolute inset-y-0 right-0 w-[65%] md:w-[68%] flex flex-col justify-center items-center text-white p-3 md:p-8 text-center z-10">
-                <h2 className="text-sm md:text-2xl font-black mb-0.5 drop-shadow-lg tracking-tight">THE {store.price} STORE</h2>
+                <h2 className="text-sm md:text-2xl font-normal font-['Times_New_Roman',_Times,_serif] mb-0.5 drop-shadow-lg tracking-tight">THE {store.price} STORE</h2>
                 <p className="text-[7px] md:text-[10px] font-serif italic tracking-[0.2em] mb-3 md:mb-6 opacity-90 border-y border-white/10 py-0.5 px-1">{store.tagline}</p>
                 
                 <div className="flex flex-col items-center leading-none mb-3 md:mb-6">
