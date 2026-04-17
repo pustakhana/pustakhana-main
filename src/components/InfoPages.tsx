@@ -29,7 +29,7 @@ const PageWrapper = ({ title, icon, children }: { title: string, icon: React.Rea
 export const AboutUsPage = () => (
   <PageWrapper title="About Us" icon={<BookOpen className="w-6 h-6 text-brand" />}>
     <p className="text-slate-600 text-lg leading-relaxed">
-      Pustakhana is built for readers who believe books should be affordable and accessible to everyone. Often called the “Robinhood of books,” we aim to bring you the best titles at unbeatable prices. Whether you love fiction, self-help, or academic reads, we make sure great books reach you without burning your pocket.
+      Pustakkhana is built for readers who believe books should be affordable and accessible to everyone. Often called the “Robinhood of books,” we aim to bring you the best titles at unbeatable prices. Whether you love fiction, self-help, or academic reads, we make sure great books reach you without burning your pocket.
     </p>
   </PageWrapper>
 );
@@ -111,7 +111,7 @@ export const WholesalePage = () => (
 export const SellWithUsPage = () => (
   <PageWrapper title="Sell with Us" icon={<Plus className="w-6 h-6 text-brand" />}>
     <p className="text-slate-600 text-lg leading-relaxed">
-      Become a partner and sell your books on our platform. Reach thousands of readers and grow your business with Pustakhana.
+      Become a partner and sell your books on our platform. Reach thousands of readers and grow your business with Pustakkhana.
     </p>
     <div className="mt-8 grid md:grid-cols-2 gap-6">
       <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100">
@@ -173,7 +173,7 @@ export const FAQsPage = () => (
         </h3>
         <div className="space-y-2">
           <FAQItem question="What does “my account” mean? How can I modify my selective information?">
-            <p>Modifying your Pustakhana account is quite simple. You can see your orders at any time via “My Account”. My Account lets you check all your transactions done on Pustakhana.</p>
+            <p>Modifying your Pustakkhana account is quite simple. You can see your orders at any time via “My Account”. My Account lets you check all your transactions done on Pustakkhana.</p>
             <ul className="list-disc pl-5 mt-4 space-y-2">
               <li>Handle/modify your personalized information such as address, contact information, e-mail IDs</li>
               <li>Modify your password</li>
@@ -196,10 +196,10 @@ export const FAQsPage = () => (
           Purchasing
         </h3>
         <div className="space-y-2">
-          <FAQItem question="Do I need to have an account on Pustakhana for shopping?">
+          <FAQItem question="Do I need to have an account on Pustakkhana for shopping?">
             <p>Yes, it is recommended to have your own account on the website as it helps you experience an individualized shopping experience, including suggestions, faster checkout procedure, and a personal wishlist. You will also be able to rate and review the items.</p>
           </FAQItem>
-          <FAQItem question="Can I place a bulk order on Pustakhana?">
+          <FAQItem question="Can I place a bulk order on Pustakkhana?">
             <p>Yes, you can place a bulk order by contacting us at <a href="mailto:pustakhana@gmail.com" className="text-brand font-bold hover:underline">pustakhana@gmail.com</a> detailing ISBN/title, quantity, and delivery location.</p>
           </FAQItem>
         </div>
@@ -211,27 +211,27 @@ export const FAQsPage = () => (
           Payment Methods
         </h3>
         <div className="space-y-2">
-          <FAQItem question="How can I make payments for purchases on Pustakhana?">
-            <p>Pustakhana accepts multiple payment modes for the convenience of customers. Customers can make payments online, assured that our trusted payment gateway partners use secure encryption technology to protect transaction details against any theft or infringement.</p>
+          <FAQItem question="How can I make payments for purchases on Pustakkhana?">
+            <p>Pustakkhana accepts multiple payment modes for the convenience of customers. Customers can make payments online, assured that our trusted payment gateway partners use secure encryption technology to protect transaction details against any theft or infringement.</p>
             <p className="mt-4">Customers can choose options such as internet banking, credit/debit cards (Visa, MasterCard, Maestro, American Express), etc.</p>
           </FAQItem>
-          <FAQItem question="When I buy from Pustakhana, do I need to worry about hidden charges like duty or taxes?">
+          <FAQItem question="When I buy from Pustakkhana, do I need to worry about hidden charges like duty or taxes?">
             <p>No, customers do not have to worry about any hidden charges. The prices displayed on the website are final and fully inclusive. You pay exactly what you see.</p>
           </FAQItem>
           <FAQItem question="How can I make payment using my credit or debit card?">
             <div className="space-y-4">
               <div>
                 <h5 className="font-bold text-slate-900 mb-2">Credit Cards</h5>
-                <p>Pustakhana accepts Visa, MasterCard, Maestro, and American Express credit cards. To pay, enter your card details, expiry date, and CVV number. You will then be redirected to your bank’s secure page to complete the transaction.</p>
+                <p>Pustakkhana accepts Visa, MasterCard, Maestro, and American Express credit cards. To pay, enter your card details, expiry date, and CVV number. You will then be redirected to your bank’s secure page to complete the transaction.</p>
               </div>
               <div>
                 <h5 className="font-bold text-slate-900 mb-2">Debit Cards</h5>
-                <p>Pustakhana accepts Visa, MasterCard, Maestro, and American Express debit cards. Enter your card details, expiry date (optional for Maestro), and CVV. Then complete the payment through your bank’s secure authentication process.</p>
+                <p>Pustakkhana accepts Visa, MasterCard, Maestro, and American Express debit cards. Enter your card details, expiry date (optional for Maestro), and CVV. Then complete the payment through your bank’s secure authentication process.</p>
               </div>
             </div>
           </FAQItem>
-          <FAQItem question="Is it safe to use my credit/debit card on Pustakhana?">
-            <p>All online transactions on Pustakhana are secured with high-level encryption technology. Payments are verified by banks using secure systems like OTP and 3D Secure for added protection.</p>
+          <FAQItem question="Is it safe to use my credit/debit card on Pustakkhana?">
+            <p>All online transactions on Pustakkhana are secured with high-level encryption technology. Payments are verified by banks using secure systems like OTP and 3D Secure for added protection.</p>
           </FAQItem>
           <FAQItem question="What does 3D Secure password mean?">
             <p>3D Secure is an added security layer by Visa and MasterCard that protects online transactions through identity verification.</p>
@@ -240,7 +240,7 @@ export const FAQsPage = () => (
             <p>You can register for it through your bank’s website or by contacting your bank.</p>
           </FAQItem>
           <FAQItem question="Can I pay using mobile?">
-            <p>Yes, you can make payments via mobile using cards or internet banking. Pustakhana ensures secure encrypted transactions on mobile as well.</p>
+            <p>Yes, you can make payments via mobile using cards or internet banking. Pustakkhana ensures secure encrypted transactions on mobile as well.</p>
           </FAQItem>
         </div>
       </section>
@@ -294,7 +294,7 @@ export const FAQsPage = () => (
           </FAQItem>
           <FAQItem question="How can I set up pickup for return?">
             <ul className="list-disc pl-5 space-y-2">
-              <li>Contact Pustakhana support</li>
+              <li>Contact Pustakkhana support</li>
               <li>Our team will guide you</li>
               <li>Courier pickup will be arranged</li>
               <li>If not available, you can ship it back (cost reimbursed)</li>
@@ -316,7 +316,7 @@ export const FAQsPage = () => (
             <p>Products are packed securely using waterproof wrapping and bubble wrap (for fragile items).</p>
           </FAQItem>
           <FAQItem question="How can I track my shipment?">
-            <p>Use the tracking ID provided to track your order via courier website or your Pustakhana account.</p>
+            <p>Use the tracking ID provided to track your order via courier website or your Pustakkhana account.</p>
           </FAQItem>
         </div>
       </section>
@@ -400,7 +400,7 @@ export const FAQsPage = () => (
 export const PrivacyPolicyPage = () => (
   <PageWrapper title="Privacy Policy" icon={<CheckCircle2 className="w-6 h-6 text-brand" />}>
     <div className="space-y-6 text-slate-600 leading-relaxed">
-      <p>At Pustakhana, we take your privacy seriously. This policy describes how we collect, use, and protect your personal information.</p>
+      <p>At Pustakkhana, we take your privacy seriously. This policy describes how we collect, use, and protect your personal information.</p>
       <h4 className="font-bold text-slate-900">1. Information Collection</h4>
       <p>We collect information you provide when creating an account, placing an order, or contacting us.</p>
       <h4 className="font-bold text-slate-900">2. Use of Information</h4>
@@ -415,12 +415,12 @@ export const TermsConditionsPage = () => (
   <PageWrapper title="Terms & Conditions" icon={<Filter className="w-6 h-6 text-brand" />}>
     <div className="space-y-8 text-slate-600 leading-relaxed">
       <div>
-        <p className="font-bold italic text-slate-900 underline mb-4">Terms & Conditions – Pustakhana</p>
+        <p className="font-bold italic text-slate-900 underline mb-4">Terms & Conditions – Pustakkhana</p>
         <p>
-          These Terms & Conditions apply to your use of the website Pustakhana. By accessing our website through a computer, mobile device, or application, you agree to be bound by these terms.
+          These Terms & Conditions apply to your use of the website Pustakkhana. By accessing our website through a computer, mobile device, or application, you agree to be bound by these terms.
         </p>
         <p>
-          These terms define the relationship between you and Pustakhana, including the conditions under which we provide access to our platform and sell products. If you do not agree with these terms, please do not use our website or make any purchases.
+          These terms define the relationship between you and Pustakkhana, including the conditions under which we provide access to our platform and sell products. If you do not agree with these terms, please do not use our website or make any purchases.
         </p>
         <p>
           Nothing in these Terms affects your statutory rights as a consumer under applicable laws.
@@ -431,7 +431,7 @@ export const TermsConditionsPage = () => (
         <h4 className="font-bold text-slate-900 italic">*1. Your Account & Profile*</h4>
         <ul className="list-disc pl-5 space-y-2">
           <li>You must complete registration before purchasing products from our website.</li>
-          <li>You can only register if your account has not been previously suspended or banned by Pustakhana.</li>
+          <li>You can only register if your account has not been previously suspended or banned by Pustakkhana.</li>
           <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
           <li>In case of suspicious activity or unauthorized access, you must notify us immediately.</li>
           <li>By registering, you confirm that all provided information is accurate and up to date.</li>
@@ -488,7 +488,7 @@ export const TermsConditionsPage = () => (
 
       <div className="space-y-4">
         <h4 className="font-bold text-slate-900 italic">*5. Limitation of Liability*</h4>
-        <p>Pustakhana shall not be liable for:</p>
+        <p>Pustakkhana shall not be liable for:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>Payment failures due to banking issues</li>
           <li>Delays caused by courier partners</li>
@@ -511,7 +511,7 @@ export const SafeSecureShoppingPage = () => (
       <section>
         <h4 className="font-bold text-slate-900 italic">1. Is it safe to use my credit/debit card?</h4>
         <div className="space-y-4">
-          <p>Yes, shopping on Pustakhana is completely safe and secure. All payments made on our website are processed through trusted and secure payment gateways.</p>
+          <p>Yes, shopping on Pustakkhana is completely safe and secure. All payments made on our website are processed through trusted and secure payment gateways.</p>
           <p>Your payment details are encrypted using advanced security protocols, ensuring that your card information remains private and protected while being transmitted over the internet.</p>
           <p>For added security, you may be required to enter your CVV (Card Verification Value) or complete OTP verification, ensuring that only authorized users can complete transactions.</p>
           <p>We continuously work with reliable payment partners to provide a safe, smooth, and secure shopping experience for all our customers.</p>
@@ -519,9 +519,9 @@ export const SafeSecureShoppingPage = () => (
       </section>
 
       <section>
-        <h4 className="font-bold text-slate-900 italic">2. Does Pustakhana store my card or bank details?</h4>
+        <h4 className="font-bold text-slate-900 italic">2. Does Pustakkhana store my card or bank details?</h4>
         <div className="space-y-4">
-          <p>No, Pustakhana does NOT store your credit/debit card or bank account details.</p>
+          <p>No, Pustakkhana does NOT store your credit/debit card or bank account details.</p>
           <p>All transactions are processed securely through third-party payment gateways. Your financial information is handled directly by these gateways and never stored on our servers.</p>
         </div>
       </section>
@@ -537,7 +537,7 @@ export const SafeSecureShoppingPage = () => (
 export const ReturnsPage = () => (
   <PageWrapper title="Returns" icon={<RotateCcw className="w-6 h-6 text-brand" />}>
     <div className="space-y-8 text-slate-600 leading-relaxed">
-      <p>At Pustakhana, we strive to ensure that all products reach you in perfect condition through careful packaging and quality checks. However, if you happen to receive a faulty or damaged product, please follow the steps below to initiate a return.</p>
+      <p>At Pustakkhana, we strive to ensure that all products reach you in perfect condition through careful packaging and quality checks. However, if you happen to receive a faulty or damaged product, please follow the steps below to initiate a return.</p>
       
       <section>
         <h4 className="font-bold text-slate-900 mb-4">Return Process</h4>

@@ -396,7 +396,7 @@ const Navbar = () => {
               <Link to="/" className="flex items-center gap-2 flex-shrink-0">
                 <img 
                   src="/logo.png" 
-                  alt="Pustakhana Logo" 
+                  alt="Pustakkhana Logo" 
                   className="h-8 md:h-12 w-auto object-contain"
                   referrerPolicy="no-referrer"
                 />
@@ -533,7 +533,7 @@ const Navbar = () => {
               <div className="p-6 border-b border-slate-100 flex items-center justify-between">
                 <img 
                   src="/logo.png" 
-                  alt="Pustakhana Logo" 
+                  alt="Pustakkhana Logo" 
                   className="h-10 w-auto object-contain"
                   referrerPolicy="no-referrer"
                 />
@@ -1696,7 +1696,7 @@ const CatalogPage = () => {
 const ShareModal = ({ isOpen, onClose, book }: { isOpen: boolean, onClose: () => void, book: Book }) => {
   const [copied, setCopied] = useState(false);
   const shareUrl = `${window.location.origin}/book/${book.id}`;
-  const shareText = `Check out this amazing book: ${book.title} at Pustakhana!`;
+  const shareText = `Check out this amazing book: ${book.title} at Pustakkhana!`;
 
   const shareOptions = [
     {
@@ -3060,7 +3060,7 @@ const CheckoutSuccessPage = () => {
         </div>
         <h1 className="text-3xl font-serif font-bold text-slate-900 mb-3">Order Placed!</h1>
         <p className="text-slate-500 mb-8 leading-relaxed">
-          Thank you for shopping with Pustakhana. Your order has been received and is being processed.
+          Thank you for shopping with Pustakkhana. Your order has been received and is being processed.
         </p>
         <div className="space-y-3">
           <button 
@@ -3633,7 +3633,7 @@ const OurLinksPage = () => {
     { title: "About Us", path: "/about-us", icon: <BookOpen className="w-6 h-6 text-brand" /> },
     { title: "Contact Us", path: "/contact-us", icon: <MapPin className="w-6 h-6 text-brand" /> },
     { title: "Blogs", path: "/blogs", icon: <Sparkles className="w-6 h-6 text-brand" /> },
-    { title: "Pustakhana Wholesale", path: "/wholesale", icon: <Package className="w-6 h-6 text-brand" /> },
+    { title: "Pustakkhana Wholesale", path: "/wholesale", icon: <Package className="w-6 h-6 text-brand" /> },
     { title: "Sell with Us", path: "/sell-with-us", icon: <Plus className="w-6 h-6 text-brand" /> },
   ];
 
@@ -3768,7 +3768,7 @@ const SupportPage = () => {
               />
               <Marker position={[19.0760, 72.8777]}>
                 <Popup>
-                  Pustakhana Book Store <br /> Mumbai, India
+                  Pustakkhana Book Store <br /> Mumbai, India
                 </Popup>
               </Marker>
             </MapContainer>
@@ -4276,12 +4276,12 @@ export default function App() {
                 <div className="lg:col-span-1">
                   <img 
                     src="/logo.png" 
-                    alt="Pustakhana Logo" 
+                    alt="Pustakkhana Logo" 
                     className="h-12 w-auto object-contain mb-6"
                     referrerPolicy="no-referrer"
                   />
                   <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                    Ever wanted to buy a book but could not because it was too expensive? worry not! because Pustakhana is here! Pustakhana, these days in news, is being called as the Robinhood of the world of books.
+                    Ever wanted to buy a book but could not because it was too expensive? worry not! because Pustakkhana is here! Pustakkhana, these days in news, is being called as the Robinhood of the world of books.
                   </p>
                   <div className="flex gap-4">
                     <a href="#" className="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center hover:bg-brand hover:text-white transition-colors">
@@ -4304,7 +4304,7 @@ export default function App() {
                     <li><Link to="/about-us" className="hover:text-brand transition-colors">About Us</Link></li>
                     <li><Link to="/contact-us" className="hover:text-brand transition-colors">Contact Us</Link></li>
                     <li><Link to="/blogs" className="hover:text-brand transition-colors">Blogs</Link></li>
-                    <li><Link to="/wholesale" className="hover:text-brand transition-colors">Pustakhana Wholesale</Link></li>
+                    <li><Link to="/wholesale" className="hover:text-brand transition-colors">Pustakkhana Wholesale</Link></li>
                   </ul>
                 </div>
 
@@ -4358,11 +4358,11 @@ export default function App() {
               <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
                 <div className="flex items-center gap-2 text-slate-400 text-xs">
                   <span>Our Products :</span>
-                  <Link to="#" className="text-brand hover:underline">Pustakhana</Link>
+                  <Link to="#" className="text-brand hover:underline">Pustakkhana</Link>
                   <Link to="#" className="text-brand hover:underline">Pustak Box</Link>
                   <Link to="#" className="text-brand hover:underline">Dump</Link>
                 </div>
-                <p className="text-slate-400 text-xs">© 2026 Pustakhana Book Store. All rights reserved.</p>
+                <p className="text-slate-400 text-xs">© 2026 Pustakkhana Book Store. All rights reserved.</p>
               </div>
             </div>
           </footer>
