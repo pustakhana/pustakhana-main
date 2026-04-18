@@ -76,6 +76,26 @@ async function startServer() {
     }
   });
 
+  // 5. Pickup Request
+  app.post("/api/delhivery/pickup", async (req, res) => {
+    try {
+      const pickupData = req.body;
+      const response = await fetch(`${DELHI_STAGING_URL}/fm/request/new/`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Token ${DELHI_TOKEN}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(pickupData)
+      });
+      const data = await response.json();
+      res.json(data);
+    } catch (error) {
+      console.error("Delhivery Pickup Request Error:", error);
+      res.status(500).json({ error: "Failed to create pickup request" });
+    }
+  });
+
   // 4. Shipping Cost Calculation
   app.get("/api/delhivery/cost", async (req, res) => {
     try {

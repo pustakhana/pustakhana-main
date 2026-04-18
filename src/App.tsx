@@ -2451,6 +2451,18 @@ const CartPage = () => {
           });
           if (shipmentResponse.packages && shipmentResponse.packages.length > 0) {
             waybill = shipmentResponse.packages[0].waybill;
+            
+            // Generate tomorrow's date for pickup
+            const tmrw = new Date();
+            tmrw.setDate(tmrw.getDate() + 1);
+            const pickupDate = tmrw.toISOString().split('T')[0];
+
+            await delhiveryService.createPickup({
+              pickup_time: '11:00:00',
+              pickup_date: pickupDate,
+              pickup_location: 'warehouse_name',
+              expected_package_count: 1
+            });
           }
         }
       } catch (err) {
@@ -3627,6 +3639,7 @@ import {
   TermsConditionsPage, SafeSecureShoppingPage, ReturnsPage 
 } from './components/InfoPages';
 import { AdminPanel } from './components/AdminPanel';
+import { AdminAuth } from './components/AdminAuth';
 
 const OurLinksPage = () => {
   const links = [
@@ -4251,8 +4264,8 @@ export default function App() {
               <Route path="/profile" element={<ProfilePage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
               <Route path="/bulk-enquiry" element={<BulkEnquiryPage />} />
-              <Route path="/admin" element={<AdminPanel />} />
-              <Route path="/admin/add-book" element={<AdminAddBook />} />
+              <Route path="/admin" element={<AdminAuth><AdminPanel /></AdminAuth>} />
+              <Route path="/admin/add-book" element={<AdminAuth><AdminAddBook /></AdminAuth>} />
               <Route path="/our-links" element={<OurLinksPage />} />
               <Route path="/quick-links" element={<QuickLinksPage />} />
               <Route path="/about-us" element={<AboutUsPage />} />

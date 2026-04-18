@@ -44,6 +44,16 @@ export const delhiveryService = {
     return response.json();
   },
 
+  createPickup: async (pickupData: any) => {
+    const response = await fetch('/api/delhivery/pickup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(pickupData)
+    });
+    if (!response.ok) throw new Error("Failed to create pickup request");
+    return response.json();
+  },
+
   calculateCost: async (d_pin: string, o_pin: string, cgm: number, pt: string): Promise<DelhiveryCostResponse> => {
     const response = await fetch(`/api/delhivery/cost?d_pin=${d_pin}&o_pin=${o_pin}&cgm=${cgm}&pt=${pt}`);
     if (!response.ok) throw new Error("Failed to calculate shipping cost");
